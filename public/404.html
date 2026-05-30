@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found | Shri Madhav Smart ELV Systems</title>
+    <meta name="description" content="The page you are looking for does not exist." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        :root {
+            --navy: #0d1b5e;
+            --navy2: #1a2d8a;
+            --orange: #f5821e;
+            --orange2: #e06c0a;
+            --light: #f8f9ff;
+            --white: #ffffff;
+            --gray: #6b7280;
+            --gray2: #374151;
+            --border: #e5e7f0;
+            --shadow: 0 4px 24px rgba(13, 27, 94, .10);
+            --font-head: 'Poppins', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            height: 100%;
+        }
+
+        body {
+            background: var(--white);
+            color: var(--gray2);
+            font-family: var(--font-body);
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* TOP BAR */
+        .top-bar {
+            background: var(--navy);
+            padding: .5rem 0;
+            font-size: .8rem;
+            color: rgba(255, 255, 255, .85)
+        }
+
+        .top-bar-inner {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: .5rem
+        }
+
+        .top-contact {
+            display: flex;
+            gap: 1.75rem;
+            align-items: center;
+            flex-wrap: wrap
+        }
+
+        .top-contact a {
+            color: rgba(255, 255, 255, .85);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            transition: color .2s
+        }
+
+        .top-contact a:hover {
+            color: var(--orange)
+        }
+
+        .top-social {
+            display: flex;
+            gap: .75rem
+        }
+
+        .soc-btn {
+            width: 28px;
+            height: 28px;
+            border: 1px solid rgba(255, 255, 255, .25);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, .7);
+            text-decoration: none;
+            font-size: .85rem;
+            transition: all .2s
+        }
+
+        .soc-btn:hover {
+            background: var(--orange);
+            border-color: var(--orange);
+            color: #fff
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            background: var(--white);
+            padding: 1rem 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100
+        }
+
+        .header-inner {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+            position: relative;
+        }
+
+        .logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-wrap img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: var(--font-head);
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: var(--navy);
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+
+        .logo-text span {
+            color: var(--orange);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 0
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0;
+            list-style: none
+        }
+
+        /* Note: Links point to index.html for a 404 page */
+        .nav-links li a {
+            padding: .6rem 1rem;
+            display: block;
+            font-size: .82rem;
+            font-weight: 600;
+            color: var(--navy);
+            text-decoration: none;
+            letter-spacing: .02em;
+            text-transform: uppercase;
+            transition: color .2s;
+            white-space: nowrap
+        }
+
+        .nav-links li a:hover {
+            color: var(--orange)
+        }
+
+        .nav-cta {
+            background: var(--orange);
+            color: #fff !important;
+            padding: .6rem 1.4rem !important;
+            border-radius: 6px;
+            margin-left: .5rem;
+            transition: background .2s !important
+        }
+
+        .nav-cta:hover {
+            background: var(--orange2) !important
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--navy);
+            cursor: pointer;
+        }
+
+        /* 404 SECTION */
+        #error-404 {
+            flex-grow: 1;
+            /* Pushes footer to the bottom */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 6rem 1.5rem;
+            background: var(--light);
+            background-image: radial-gradient(var(--border) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .error-code {
+            font-family: var(--font-head);
+            font-size: clamp(6rem, 15vw, 12rem);
+            font-weight: 800;
+            color: var(--navy);
+            line-height: 1;
+            letter-spacing: -0.05em;
+            margin-bottom: 0.5rem;
+            text-shadow: 4px 4px 0 rgba(245, 130, 30, 0.2);
+        }
+
+        .error-title {
+            font-family: var(--font-head);
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--orange);
+            margin-bottom: 1rem;
+        }
+
+        .error-desc {
+            font-size: 1rem;
+            color: var(--gray);
+            max-width: 500px;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+
+        .btn-orange {
+            background: var(--orange);
+            color: #fff;
+            padding: .85rem 2rem;
+            border-radius: 7px;
+            font-family: var(--font-head);
+            font-weight: 700;
+            font-size: .9rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            transition: all .25s;
+            box-shadow: 0 4px 20px rgba(245, 130, 30, .4)
+        }
+
+        .btn-orange:hover {
+            background: var(--orange2);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(245, 130, 30, .5)
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--navy);
+            color: rgba(255, 255, 255, .8);
+            padding: 3rem 0 1.5rem
+        }
+
+        .footer-top {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 1.5rem 2rem;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, .08)
+        }
+
+        .footer-logo img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo-text {
+            font-family: var(--font-head);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .footer-tagline {
+            font-size: .82rem;
+            color: rgba(255, 255, 255, .55);
+            line-height: 1.65;
+            margin-bottom: 1.25rem
+        }
+
+        .footer-col-title {
+            font-family: var(--font-head);
+            font-size: .78rem;
+            font-weight: 700;
+            color: var(--orange);
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            margin-bottom: 1rem
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem
+        }
+
+        .footer-links a {
+            font-size: .82rem;
+            color: rgba(255, 255, 255, .6);
+            text-decoration: none;
+            transition: color .2s
+        }
+
+        .footer-links a:hover {
+            color: var(--orange)
+        }
+
+        .footer-bottom {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 1.5rem 1.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: .75rem
+        }
+
+        .footer-copy {
+            font-size: .75rem;
+            color: rgba(255, 255, 255, .35)
+        }
+
+        .footer-reg {
+            font-size: .72rem;
+            color: rgba(255, 255, 255, .25);
+            font-family: var(--font-head)
+        }
+
+        /* MOBILE RESPONSIVE UPDATES */
+        @media(max-width:1024px) {
+            .footer-top {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+
+        @media(max-width:768px) {
+            .top-bar {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                z-index: 99;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                text-align: center;
+                width: 100%;
+            }
+
+            .nav-links li a {
+                padding: 1rem;
+            }
+
+            .nav-cta {
+                margin: 0.5rem auto;
+                width: max-content;
+            }
+
+            .header-inner {
+                padding: 0 1rem
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr
+            }
+
+            .logo-text {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <div class="top-contact">
+                <a href="tel:+919306437552"><i class="fa-solid fa-phone"></i> +91 9306437552</a>
+                <a href="mailto:info@smses.co.in"><i class="fa-solid fa-envelope"></i> info@smses.co.in</a>
+                <a href="#" style="color:rgba(255,255,255,.65);pointer-events:none"><i
+                        class="fa-solid fa-location-dot"></i> Punjab • Haryana • Chandigarh • Himachal Pradesh</a>
+            </div>
+          
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo-wrap">
+                <img src="logo.png" alt="Shri Madhav Smart ELV Systems Logo" />
+                <span class="logo-text">Shri Madhav<br><span>Smart ELV Systems</span></span>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#info">About</a></li>
+                    <li><a href="index.html#contact-section" class="nav-cta">Get a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 404 CONTENT -->
+    <section id="error-404">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Oops! Page Not Found</h1>
+        <p class="error-desc">The page you are looking for might have been removed, had its name changed, or is
+            temporarily unavailable.</p>
+        <a href="index.html" class="btn-orange"><i class="fa-solid fa-arrow-left"></i> Back to Homepage</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div>
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Shri Madhav Smart ELV Systems Logo" />
+                    <div class="footer-logo-text">Shri Madhav Smart ELV Systems</div>
+                </div>
+                <p class="footer-tagline">A trusted name in ELV system integration — delivering smart security and
+                    connectivity solutions across North India since our founding.</p>
+              
+            </div>
+            <div>
+                <div class="footer-col-title">Our Services</div>
+                <ul class="footer-links">
+                    <li><a href="index.html#services">CCTV Surveillance</a></li>
+                    <li><a href="index.html#services">Fire Alarm Systems</a></li>
+                    <li><a href="index.html#services">Access Control</a></li>
+                    <li><a href="index.html#services">Networking Solutions</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-col-title">Service Areas</div>
+                <ul class="footer-links">
+                    <li><a href="#">Punjab</a></li>
+                    <li><a href="#">Haryana</a></li>
+                    <li><a href="#">Chandigarh</a></li>
+                    <li><a href="#">Himachal Pradesh</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-col-title">Contact</div>
+                <ul class="footer-links">
+                    <li><a href="tel:+919306437552"><i class="fa-solid fa-phone" style="width:16px;"></i> +91
+                            9306437552</a></li>
+                    <li><a href="mailto:info@smses.co.in"><i class="fa-solid fa-envelope" style="width:16px;"></i>
+                            info@smses.co.in</a></li>
+                    <li><a href="#"><i class="fa-solid fa-globe" style="width:16px;"></i> www.smses.co.in</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© <script>document.write(new Date().getFullYear())</script> Shri Madhav Smart ELV Systems. All rights reserved.</div>
+            <div class="footer-reg">Smart Security • Smart Connectivity • Smart Solutions</div>
+        </div>
+    </footer>
+
+    <script>
+        // MOBILE HAMBURGER MENU TOGGLE
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = hamburger.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // STICKY HEADER SHADOW
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.style.boxShadow = window.scrollY > 10 ? '0 4px 30px rgba(13,27,94,.15)' : '0 4px 24px rgba(13,27,94,.08)';
+        });
+    </script>
+</body>
+
+</html>

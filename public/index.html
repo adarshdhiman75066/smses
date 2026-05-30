@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shri Madhav Smart ELV Systems | Smart Security • Smart Connectivity</title>
+  <meta name="description"
+    content="Shri Madhav Smart ELV Systems — Professional ELV system integration company providing CCTV, Fire Alarm, Access Control, Networking and automation solutions across Punjab, Haryana, Chandigarh & Himachal Pradesh." />
+  <meta name="keywords"
+    content="ELV solutions Punjab, CCTV installation Haryana, fire alarm Chandigarh, access control systems, networking solutions, gate automation, PA systems, AMC services, Sunil Dhiman, Shri Madhav" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    :root {
+      --navy: #0d1b5e;
+      --navy2: #1a2d8a;
+      --orange: #f5821e;
+      --orange2: #e06c0a;
+      --light: #f8f9ff;
+      --white: #ffffff;
+      --gray: #6b7280;
+      --gray2: #374151;
+      --border: #e5e7f0;
+      --shadow: 0 4px 24px rgba(13, 27, 94, .10);
+      --font-head: 'Poppins', sans-serif;
+      --font-body: 'Open Sans', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      background: var(--white);
+      color: var(--gray2);
+      font-family: var(--font-body);
+      overflow-x: hidden
+    }
+
+    /* TOP BAR */
+    .top-bar {
+      background: var(--navy);
+      padding: .5rem 0;
+      font-size: .8rem;
+      color: rgba(255, 255, 255, .85)
+    }
+
+    .top-bar-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .5rem
+    }
+
+    .top-contact {
+      display: flex;
+      gap: 1.75rem;
+      align-items: center;
+      flex-wrap: wrap
+    }
+
+    .top-contact a {
+      color: rgba(255, 255, 255, .85);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      transition: color .2s
+    }
+
+    .top-contact a:hover {
+      color: var(--orange)
+    }
+
+    .top-social {
+      display: flex;
+      gap: .75rem
+    }
+
+    .soc-btn {
+      width: 28px;
+      height: 28px;
+      border: 1px solid rgba(255, 255, 255, .25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, .7);
+      text-decoration: none;
+      font-size: .85rem;
+      transition: all .2s
+    }
+
+    .soc-btn:hover {
+      background: var(--orange);
+      border-color: var(--orange);
+      color: #fff
+    }
+
+    /* HEADER & NAVIGATION */
+    header {
+      background: var(--white);
+      padding: 1rem 0;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100
+    }
+
+    .header-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      position: relative;
+    }
+
+    /* UPDATED LOGO SECTION */
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-wrap img {
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .logo-text {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--navy);
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-text span {
+      color: var(--orange);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 0
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0;
+      list-style: none
+    }
+
+    .nav-links li a {
+      padding: .6rem 1rem;
+      display: block;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--navy);
+      text-decoration: none;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+      transition: color .2s;
+      white-space: nowrap
+    }
+
+    .nav-links li a:hover {
+      color: var(--orange)
+    }
+
+    .nav-links li a.active {
+      color: var(--orange)
+    }
+
+    .nav-cta {
+      background: var(--orange);
+      color: #fff !important;
+      padding: .6rem 1.4rem !important;
+      border-radius: 6px;
+      margin-left: .5rem;
+      transition: background .2s !important
+    }
+
+    .nav-cta:hover {
+      background: var(--orange2) !important
+    }
+
+    /* HAMBURGER ICON */
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      color: var(--navy);
+      cursor: pointer;
+    }
+
+    /* HERO */
+    #hero {
+      position: relative;
+      overflow: hidden;
+      padding: 5rem 0 3rem;
+
+      background: url("hero-bg.jpg") center center / cover no-repeat;
+    }
+
+    /* Blue overlay */
+    #hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(90deg,
+          rgba(8, 35, 95, 0.72) 0%,
+          rgba(15, 65, 170, 0.45) 45%,
+          rgba(15, 65, 170, 0.28) 100%);
+
+      z-index: 0;
+    }
+
+    /* Pattern overlay */
+    #hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 55%;
+      height: 100%;
+
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+      z-index: 1;
+    }
+
+    /* Keep content above overlays */
+    .hero-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+
+      background: rgba(245, 130, 30, .15);
+      border: 1px solid rgba(245, 130, 30, .4);
+
+      border-radius: 100px;
+      padding: .35rem 1rem;
+
+      font-size: .72rem;
+      color: var(--orange);
+      font-family: var(--font-head);
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-badge::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+
+      background: var(--orange);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--orange);
+
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1)
+      }
+
+      50% {
+        opacity: .5;
+        transform: scale(1.4)
+      }
+    }
+
+    h1 {
+      font-family: var(--font-head);
+      font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: -.02em;
+      margin-bottom: 1rem
+    }
+
+    h1 span {
+      color: var(--orange)
+    }
+
+    .hero-tagline {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, .7);
+      margin-bottom: 1rem;
+      font-weight: 600;
+      letter-spacing: .04em
+    }
+
+    .hero-desc {
+      font-size: .95rem;
+      color: rgba(255, 255, 255, .65);
+      line-height: 1.75;
+      margin-bottom: 2rem;
+      max-width: 500px
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: .75rem;
+      flex-wrap: wrap
+    }
+
+    .btn-orange {
+      background: var(--orange);
+      color: #fff;
+      padding: .85rem 2rem;
+      border-radius: 7px;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      transition: all .25s;
+      box-shadow: 0 4px 20px rgba(245, 130, 30, .4)
+    }
+
+    .btn-orange:hover {
+      background: var(--orange2);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(245, 130, 30, .5)
+    }
+
+    .btn-outline-w {
+      background: transparent;
+      color: #fff;
+      padding: .85rem 2rem;
+      border-radius: 7px;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      border: 2px solid rgba(255, 255, 255, .35);
+      transition: all .25s
+    }
+
+    .btn-outline-w:hover {
+      background: rgba(255, 255, 255, .1);
+      border-color: rgba(255, 255, 255, .6)
+    }
+
+    .hero-img-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      position: relative
+    }
+
+    .hero-img-card {
+      background: rgba(255, 255, 255, .07);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 14px;
+      padding: 1.5rem;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      transition: transform .3s
+    }
+
+    .hero-img-card:hover {
+      transform: translateY(-4px)
+    }
+
+    .hero-img-card .icon {
+      font-size: 2.2rem;
+      color: var(--orange);
+      display: block;
+      margin-bottom: .8rem
+    }
+
+    .hero-img-card p {
+      font-size: .78rem;
+      color: rgba(255, 255, 255, .75);
+      font-weight: 500;
+      letter-spacing: .03em
+    }
+
+    /* TRUST BAR */
+    .trust-bar {
+      background: var(--white);
+      border-bottom: 3px solid var(--orange);
+      padding: .1rem 0;
+      box-shadow: 0 2px 16px rgba(13, 27, 94, .08)
+    }
+
+    .trust-bar-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.25rem
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      font-family: var(--font-head)
+    }
+
+    .trust-ico {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: var(--white);
+      flex-shrink: 0;
+      box-shadow: 0 4px 14px rgba(13, 27, 94, .2)
+    }
+
+    .trust-text strong {
+      display: block;
+      font-size: .88rem;
+      color: var(--navy);
+      font-weight: 700
+    }
+
+    .trust-text span {
+      font-size: .72rem;
+      color: var(--gray);
+      letter-spacing: .04em
+    }
+
+    /* SERVICES */
+    #services {
+      padding: 5rem 0;
+      background: var(--light)
+    }
+
+    .section-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem
+    }
+
+    .section-head {
+      text-align: center;
+      margin-bottom: 3rem
+    }
+
+    .section-label {
+      display: inline-block;
+      background: rgba(245, 130, 30, .1);
+      color: var(--orange);
+      font-family: var(--font-head);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .35rem .9rem;
+      border-radius: 100px;
+      margin-bottom: .75rem;
+      border: 1px solid rgba(245, 130, 30, .2)
+    }
+
+    .section-title {
+      font-family: var(--font-head);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -.03em;
+      margin-bottom: .75rem
+    }
+
+    .section-sub {
+      font-size: .95rem;
+      color: var(--gray);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.7
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem
+    }
+
+    .srv-card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: all .3s;
+      cursor: default
+    }
+
+    .srv-card:hover {
+      border-color: var(--orange);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(245, 130, 30, .12)
+    }
+
+    .srv-ico-wrap {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, rgba(13, 27, 94, .08), rgba(13, 27, 94, .04));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      font-size: 1.8rem;
+      color: var(--navy);
+      border: 2px solid transparent;
+      transition: all .3s
+    }
+
+    .srv-card:hover .srv-ico-wrap {
+      background: linear-gradient(135deg, var(--orange), var(--orange2));
+      border-color: var(--orange);
+      color: var(--white);
+    }
+
+    .srv-name {
+      font-family: var(--font-head);
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: .5rem
+    }
+
+    .srv-desc {
+      font-size: .78rem;
+      color: var(--gray);
+      line-height: 1.6
+    }
+
+    /* INFO SECTION */
+    #info {
+      padding: 5rem 0
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden
+    }
+
+    .info-col {
+      padding: 2.5rem 2rem;
+      border-right: 1px solid var(--border)
+    }
+
+    .info-col:last-child {
+      border-right: none;
+      background: var(--navy);
+      color: #fff
+    }
+
+    .info-col-title {
+      font-family: var(--font-head);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem
+    }
+
+    .info-col-title::before {
+      content: '';
+      width: 16px;
+      height: 2px;
+      background: var(--orange)
+    }
+
+    /* About col */
+    .about-text {
+      font-size: .85rem;
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 1.25rem
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-family: var(--font-head);
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+      border: 1px solid var(--navy);
+      padding: .45rem 1rem;
+      border-radius: 6px;
+      transition: all .2s
+    }
+
+    .read-more:hover {
+      background: var(--navy);
+      color: #fff
+    }
+
+    /* Why col */
+    .why-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .65rem
+    }
+
+    .why-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: .5rem;
+      font-size: .84rem;
+      color: var(--gray)
+    }
+
+    .why-list li::before {
+      content: '\f058';
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: var(--orange);
+      font-size: .9rem;
+      margin-top: .15rem;
+      flex-shrink: 0
+    }
+
+    .explore-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-family: var(--font-head);
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+      border: 1px solid var(--navy);
+      padding: .45rem 1rem;
+      border-radius: 6px;
+      transition: all .2s;
+      margin-top: 1rem
+    }
+
+    .explore-btn:hover {
+      background: var(--navy);
+      color: #fff
+    }
+
+    /* Areas col */
+    .area-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .6rem
+    }
+
+    .area-list li {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .87rem;
+      color: var(--gray)
+    }
+
+    .area-list li::before {
+      content: '\f041';
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: var(--navy);
+      font-size: .9rem
+    }
+
+    .view-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-family: var(--font-head);
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+      border: 1px solid var(--navy);
+      padding: .45rem 1rem;
+      border-radius: 6px;
+      transition: all .2s;
+      margin-top: 1rem
+    }
+
+    .view-btn:hover {
+      background: var(--navy);
+      color: #fff
+    }
+
+    /* Contact col */
+    .info-col.dark .info-col-title {
+      color: var(--orange)
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: .6rem;
+      margin-bottom: 1rem
+    }
+
+    .contact-item .c-ico {
+      width: 32px;
+      height: 32px;
+      background: rgba(245, 130, 30, .2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--orange);
+      font-size: .9rem;
+      flex-shrink: 0
+    }
+
+    .contact-item .c-text {
+      font-size: .82rem
+    }
+
+    .contact-item .c-text a {
+      color: rgba(255, 255, 255, .9);
+      text-decoration: none
+    }
+
+    .contact-item .c-text a:hover {
+      color: var(--orange)
+    }
+
+    .contact-item .c-label {
+      font-size: .68rem;
+      color: rgba(255, 255, 255, .4);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: .1rem
+    }
+
+    /* STATS */
+    .stats-bar {
+      background: linear-gradient(90deg, var(--navy) 0%, var(--navy2) 100%);
+      padding: 2.5rem 0
+    }
+
+    .stats-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr)
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 0 1rem;
+      border-right: 1px solid rgba(255, 255, 255, .1)
+    }
+
+    .stat-item:last-child {
+      border-right: none
+    }
+
+    .stat-num {
+      font-family: var(--font-head);
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--orange);
+      letter-spacing: -.04em
+    }
+
+    .stat-label {
+      font-size: .78rem;
+      color: rgba(255, 255, 255, .6);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-top: .25rem
+    }
+
+    /* CTA */
+    #cta-section {
+      padding: 4rem 0;
+      background: var(--light)
+    }
+
+    .cta-box {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem
+    }
+
+    .cta-inner {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+      border-radius: 20px;
+      padding: 3.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      position: relative;
+      overflow: hidden
+    }
+
+    .cta-inner::before {
+      content: '\f32e';
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 3rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 8rem;
+      opacity: .06;
+      color: #fff
+    }
+
+    .cta-text h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -.03em;
+      margin-bottom: .5rem
+    }
+
+    .cta-text p {
+      font-size: .95rem;
+      color: rgba(255, 255, 255, .65)
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: .75rem;
+      flex-wrap: wrap
+    }
+
+    /* CONTACT FORM */
+    #contact-section {
+      padding: 5rem 0
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 4rem;
+      align-items: start
+    }
+
+    .contact-info-title {
+      font-family: var(--font-head);
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -.03em;
+      margin-bottom: .75rem
+    }
+
+    .contact-info-sub {
+      font-size: .92rem;
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 2rem
+    }
+
+    .c-detail {
+      display: flex;
+      gap: .9rem;
+      margin-bottom: 1.5rem;
+      align-items: flex-start
+    }
+
+    .c-detail .cd-ico {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0
+    }
+
+    .c-detail .cd-label {
+      font-size: .7rem;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: .15rem
+    }
+
+    .c-detail .cd-val {
+      font-size: .92rem;
+      color: var(--navy);
+      font-weight: 600
+    }
+
+    .c-detail .cd-val a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    .c-detail .cd-val a:hover {
+      color: var(--orange)
+    }
+
+    .form-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: var(--shadow)
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem
+    }
+
+    .fg {
+      display: flex;
+      flex-direction: column;
+      gap: .35rem;
+      margin-bottom: 1rem
+    }
+
+    .fg label {
+      font-size: .72rem;
+      font-family: var(--font-head);
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: .08em;
+      text-transform: uppercase
+    }
+
+    .fg input,
+    .fg textarea,
+    .fg select {
+      padding: .7rem 1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-family: var(--font-body);
+      font-size: .88rem;
+      color: var(--gray2);
+      outline: none;
+      transition: border-color .2s;
+      background: var(--light)
+    }
+
+    .fg input:focus,
+    .fg textarea:focus,
+    .fg select:focus {
+      border-color: var(--navy)
+    }
+
+    .fg input::placeholder,
+    .fg textarea::placeholder {
+      color: #b0bec5
+    }
+
+    .fg textarea {
+      resize: vertical;
+      min-height: 110px
+    }
+
+    .form-btn {
+      width: 100%;
+      padding: .9rem;
+      background: var(--orange);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .95rem;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(245, 130, 30, .35);
+      transition: all .25s;
+      letter-spacing: .03em
+    }
+
+    .form-btn:hover {
+      background: var(--orange2);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 30px rgba(245, 130, 30, .45)
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      color: rgba(255, 255, 255, .8);
+      padding: 3rem 0 1.5rem
+    }
+
+    .footer-top {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem 2rem;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .08)
+    }
+
+    .footer-logo img {
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .footer-logo-text {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .footer-tagline {
+      font-size: .82rem;
+      color: rgba(255, 255, 255, .55);
+      line-height: 1.65;
+      margin-bottom: 1.25rem
+    }
+
+    .footer-col-title {
+      font-family: var(--font-head);
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--orange);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: 1rem
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem
+    }
+
+    .footer-links a {
+      font-size: .82rem;
+      color: rgba(255, 255, 255, .6);
+      text-decoration: none;
+      transition: color .2s
+    }
+
+    .footer-links a:hover {
+      color: var(--orange)
+    }
+
+    .footer-bottom {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .75rem
+    }
+
+    .footer-copy {
+      font-size: .75rem;
+      color: rgba(255, 255, 255, .35)
+    }
+
+    .footer-reg {
+      font-size: .72rem;
+      color: rgba(255, 255, 255, .25);
+      font-family: var(--font-head)
+    }
+
+    /* DIVIDER */
+    .divider-orange {
+      height: 3px;
+      background: linear-gradient(90deg, var(--orange), var(--orange2), var(--navy))
+    }
+
+    /* ANIMATIONS */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s cubic-bezier(.16, 1, .3, 1), transform .7s cubic-bezier(.16, 1, .3, 1)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none
+    }
+
+    /* MOBILE RESPONSIVE UPDATES */
+    @media(max-width:1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .info-col:nth-child(2) {
+        border-right: none
+      }
+
+      .info-col:nth-child(3) {
+        border-top: 1px solid var(--border)
+      }
+
+      .info-col:nth-child(4) {
+        border-top: 1px solid var(--border);
+        border-right: none
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr
+      }
+
+      .hero-img-grid {
+        display: none
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .stats-inner {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .stat-item:nth-child(2) {
+        border-right: none
+      }
+
+      .stat-item:nth-child(3) {
+        border-top: 1px solid rgba(255, 255, 255, .1)
+      }
+    }
+
+    @media(max-width:768px) {
+
+      /* Hide Top Bar on Mobile */
+      .top-bar {
+        display: none;
+      }
+
+      /* Show Hamburger Icon */
+      .hamburger {
+        display: block;
+      }
+
+      /* Mobile Navigation Menu */
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        text-align: center;
+        width: 100%;
+      }
+
+      .nav-links li a {
+        padding: 1rem;
+      }
+
+      .nav-cta {
+        margin: 0.5rem auto;
+        width: max-content;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr
+      }
+
+      .info-col {
+        border-right: none;
+        border-top: 1px solid var(--border)
+      }
+
+      .info-col:first-child {
+        border-top: none
+      }
+
+      .header-inner {
+        padding: 0 1rem
+      }
+
+      .form-row {
+        grid-template-columns: 1fr
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr
+      }
+
+      .stats-inner {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .trust-bar-inner {
+        justify-content: flex-start;
+        gap: 1.5rem
+      }
+
+      .logo-text {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-contact">
+        <a href="tel:+919306437552"><i class="fa-solid fa-phone"></i> +91 9306437552</a>
+        <a href="mailto:info@smses.co.in"><i class="fa-solid fa-envelope"></i> info@smses.co.in</a>
+        <a href="#" style="color:rgba(255,255,255,.65);pointer-events:none"><i class="fa-solid fa-location-dot"></i>
+          Punjab • Haryana • Chandigarh • Himachal Pradesh</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="#" class="logo-wrap">
+        <img src="logo.png" alt="Shri Madhav Smart ELV Solutions Logo" />
+        <span class="logo-text">Shri Madhav<br><span>Smart ELV Systems</span></span>
+      </a>
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#info">About</a></li>
+          <li><a href="#info">Why Us</a></li>
+          <li><a href="#info">Service Areas</a></li>
+          <li><a href="#contact-section" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge"><i class="fa-solid fa-shield-halved"></i> Complete ELV &amp; Security Solutions</div>
+        <h1>Complete ELV &amp; Security <span>Solutions</span></h1>
+        <p class="hero-tagline">Secure Today, Smarter Tomorrow</p>
+        <p class="hero-desc">We provide advanced and reliable ELV solutions to protect your business, assets and people
+          with the latest technology — across Punjab, Haryana, Chandigarh &amp; Himachal Pradesh.</p>
+        <div class="hero-btns">
+          <a href="tel:+919306437552" class="btn-orange"><i class="fa-solid fa-phone"></i> Call Now</a>
+          <a href="#contact-section" class="btn-outline-w"><i class="fa-solid fa-clipboard-list"></i> Get a Quote</a>
+        </div>
+      </div>
+      <div class="hero-img-grid">
+        <div class="hero-img-card">
+          <span class="icon"><i class="fa-solid fa-video"></i></span>
+          <p>CCTV Surveillance</p>
+        </div>
+        <div class="hero-img-card">
+          <span class="icon"><i class="fa-solid fa-fire-flame-curved"></i></span>
+          <p>Fire Alarm Systems</p>
+        </div>
+        <div class="hero-img-card">
+          <span class="icon"><i class="fa-solid fa-fingerprint"></i></span>
+          <p>Access Control</p>
+        </div>
+        <div class="hero-img-card">
+          <span class="icon"><i class="fa-solid fa-network-wired"></i></span>
+          <p>Networking Solutions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider-orange"></div>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <div class="trust-ico"><i class="fa-solid fa-check-double"></i></div>
+        <div class="trust-text"><strong>100% Quality Assured</strong><span>Only trusted brands &amp; quality
+            products</span></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-ico"><i class="fa-solid fa-user-shield"></i></div>
+        <div class="trust-text"><strong>Expert Technicians</strong><span>Skilled &amp; certified professionals</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-ico"><i class="fa-solid fa-bolt"></i></div>
+        <div class="trust-text"><strong>Quick Support</strong><span>24/7 support for all your needs</span></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-ico"><i class="fa-solid fa-star"></i></div>
+        <div class="trust-text"><strong>Customer Satisfaction</strong><span>Our priority is your satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <div class="section-label">Our Services</div>
+        <h2 class="section-title">Complete ELV &amp; Security Solutions</h2>
+        <p class="section-sub">Professional installation of advanced security and automation systems — designed for
+          homes, offices, and industries.</p>
+      </div>
+      <div class="services-grid reveal">
+        <div class="srv-card">
+          <div class="srv-ico-wrap"><span class="ico"><i class="fa-solid fa-video"></i></span></div>
+          <div class="srv-name">CCTV Surveillance</div>
+          <p class="srv-desc">High-definition CCTV installation for homes, offices, shops and industries with 24/7
+            monitoring.</p>
+        </div>
+        <div class="srv-card">
+          <div class="srv-ico-wrap"><span class="ico"><i class="fa-solid fa-fire-flame-curved"></i></span></div>
+          <div class="srv-name">Fire Alarm Systems</div>
+          <p class="srv-desc">Early fire detection and safety alarm solutions for complete protection of life and
+            property.</p>
+        </div>
+        <div class="srv-card">
+          <div class="srv-ico-wrap"><span class="ico"><i class="fa-solid fa-fingerprint"></i></span></div>
+          <div class="srv-name">Access Control</div>
+          <p class="srv-desc">Biometric, RFID &amp; smart door access systems for secure entry control of your premises.
+          </p>
+        </div>
+        <div class="srv-card">
+          <div class="srv-ico-wrap"><span class="ico"><i class="fa-solid fa-network-wired"></i></span></div>
+          <div class="srv-name">Networking Solutions</div>
+          <p class="srv-desc">LAN, WAN, structured cabling &amp; internet networking setup — reliable &amp;
+            high-performance.</p>
+        </div>
+        <div class="srv-card">
+          <div class="srv-ico-wrap"><span class="ico"><i class="fa-solid fa-bullhorn"></i></span></div>
+          <div class="srv-name">PA Systems</div>
+          <p class="srv-desc">Public announcement systems for schools, offices &amp; industries — clear communication
+            everywhere.</p>
+        </div>
+        <div class="srv-card">
+          <div class="srv-ico-wrap"><span class="ico"><i class="fa-solid fa-tty"></i></span></div>
+          <div class="srv-name">Video Door Phone</div>
+          <p class="srv-desc">Smart video intercom systems for residential security — see, hear &amp; secure your
+            entrance.</p>
+        </div>
+        <div class="srv-card">
+          <div class="srv-ico-wrap"><span class="ico"><i class="fa-solid fa-road-barrier"></i></span></div>
+          <div class="srv-name">Boom Barrier &amp; Gate</div>
+          <p class="srv-desc">Automatic gate control for societies, industries &amp; parking areas with boom barrier
+            systems.</p>
+        </div>
+        <div class="srv-card">
+          <div class="srv-ico-wrap"><span class="ico"><i class="fa-solid fa-screwdriver-wrench"></i></span></div>
+          <div class="srv-name">AMC &amp; Maintenance</div>
+          <p class="srv-desc">Annual Maintenance Contracts for all ELV systems — ensuring reliability year-round.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO 4-COL -->
+  <section id="info">
+    <div class="section-inner">
+      <div class="info-grid reveal">
+        <!-- About -->
+        <div class="info-col">
+          <div class="info-col-title">About Us</div>
+          <p class="about-text">Shri Madhav Smart ELV Systems is a trusted name in the ELV industry delivering reliable
+            and modern technology solutions.</p>
+          <p class="about-text">We specialize in designing, installing, and maintaining integrated security and
+            communication systems that make your spaces smarter and safer. Our team brings expertise, professionalism,
+            and genuine commitment to every project.</p>
+
+        </div>
+        <!-- Why -->
+        <div class="info-col">
+          <div class="info-col-title">Why Choose Us?</div>
+          <ul class="why-list">
+            <li>Expert Team &amp; Professional Installation</li>
+            <li>Quality Products &amp; Latest Technology</li>
+            <li>Customized Solutions for Every Need</li>
+            <li>On-time Delivery &amp; Reliable Support</li>
+            <li>AMC &amp; 24/7 Maintenance Support</li>
+            <li>Affordable Pricing — No Hidden Costs</li>
+          </ul>
+
+        </div>
+        <!-- Areas -->
+        <div class="info-col">
+          <div class="info-col-title">Service Areas</div>
+          <ul class="area-list">
+            <li>Punjab</li>
+            <li>Haryana</li>
+            <li>Chandigarh</li>
+            <li>Himachal Pradesh</li>
+          </ul>
+
+        </div>
+        <!-- Contact -->
+        <div class="info-col dark">
+          <div class="info-col-title">Get In Touch</div>
+          <div class="contact-item">
+            <div class="c-ico"><i class="fa-solid fa-phone"></i></div>
+            <div class="c-text"><span class="c-label">Phone</span><a href="tel:+919306437552">+91 9306437552</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="c-ico"><i class="fa-solid fa-envelope"></i></div>
+            <div class="c-text"><span class="c-label">Email</span><a href="mailto:info@smses.co.in">info@smses.co.in</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-ico"><i class="fa-solid fa-user"></i></div>
+            <div class="c-text"><span class="c-label">Proprietor</span><span style="color:rgba(255,255,255,.9)">Sunil
+                Dhiman</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="c-ico"><i class="fa-solid fa-globe"></i></div>
+            <div class="c-text"><span class="c-label">Website</span><a href="#">www.smses.co.in</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">4</div>
+        <div class="stat-label">States Covered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">7+</div>
+        <div class="stat-label">Services Offered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section id="cta-section">
+    <div class="cta-box">
+      <div class="cta-inner reveal">
+        <div class="cta-text">
+          <h2>Ready to Secure Your Property?</h2>
+          <p>Get a free consultation. Our experts will assess your needs and provide the best ELV solution.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:+919306437552" class="btn-orange"><i class="fa-solid fa-phone"></i> Call Now</a>
+          <a href="#contact-section" class="btn-outline-w">Get Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section id="contact-section">
+    <div class="section-inner">
+      <div class="contact-grid reveal">
+
+        <div>
+          <div class="section-label">Contact Us</div>
+          <h2 class="contact-info-title">Let's Discuss<br />Your Security Needs</h2>
+          <p class="contact-info-sub">Our team of ELV experts is ready to help you design and implement the right
+            security solution for your home or business.</p>
+
+          <div class="c-detail">
+            <div class="cd-ico"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <div class="cd-label">Phone / WhatsApp</div>
+              <div class="cd-val"><a href="tel:+919306437552">+91 9306437552</a></div>
+            </div>
+          </div>
+
+          <div class="c-detail">
+            <div class="cd-ico"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="cd-label">Email</div>
+              <div class="cd-val"><a href="mailto:info@smses.co.in">info@smses.co.in</a></div>
+            </div>
+          </div>
+
+          <div class="c-detail">
+            <div class="cd-ico"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="cd-label">Service Regions</div>
+              <div class="cd-val">Punjab · Haryana · Chandigarh · Himachal Pradesh</div>
+            </div>
+          </div>
+
+          <div class="c-detail">
+            <div class="cd-ico"><i class="fa-solid fa-user-tie"></i></div>
+            <div>
+              <div class="cd-label">Founder &amp; Proprietor</div>
+              <div class="cd-val">Sunil Dhiman</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card">
+
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="handleIframeLoad()"></iframe>
+
+          <form id="staticGoogleForm"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSdxTtClPBwNzCDMgm8UkHPPCJOvvEb2XB73127sbuUDAPcjVQ/formResponse"
+            method="POST" target="hidden_iframe" onsubmit="handleFormSubmit()">
+
+            <div class="form-row">
+              <div class="fg">
+                <label>Full Name</label>
+                <input type="text" name="entry.1508170211" required placeholder="Your name" />
+              </div>
+              <div class="fg">
+                <label>Phone</label>
+                <input type="tel" name="entry.613459072" required placeholder="+91 XXXXX XXXXX" />
+              </div>
+            </div>
+
+            <div class="fg">
+              <label>Email</label>
+              <input type="email" name="entry.100888073" required placeholder="you@email.com" />
+            </div>
+
+            <div class="fg">
+              <label>Service Required</label>
+              <select name="entry.1409754130" required>
+                <option value="">Select a service...</option>
+                <option value="CCTV Surveillance Systems">CCTV Surveillance Systems</option>
+                <option value="Fire Alarm Systems">Fire Alarm Systems</option>
+                <option value="Access Control Systems">Access Control Systems</option>
+                <option value="Networking Solutions">Networking Solutions</option>
+                <option value="PA Systems">PA Systems</option>
+                <option value="Video Door Phone">Video Door Phone</option>
+                <option value="Boom Barrier & Gate Automation">Boom Barrier & Gate Automation</option>
+                <option value="AMC & Maintenance">AMC & Maintenance</option>
+                <option value="Multiple Services / Package">Multiple Services / Package</option>
+              </select>
+            </div>
+
+            <div class="fg">
+              <label>Message</label>
+              <textarea name="entry.751293657" required
+                placeholder="Describe your requirement — property type, location, approximate scale..."></textarea>
+            </div>
+
+            <div id="formFeedback"
+              style="display: none; padding: 12px; margin-bottom: 15px; border-radius: 4px; font-size: 14px; font-weight: 500;">
+            </div>
+
+            <button type="submit" class="form-btn" id="submitBtn">
+              <span id="btnText">Send Message</span>
+              <i class="fa-solid fa-paper-plane" style="margin-left:5px;"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let isSubmitting = false;
+
+    // Triggered when the user clicks submit
+    function handleFormSubmit() {
+      isSubmitting = true;
+      document.getElementById('btnText').innerText = 'Sending...';
+      document.getElementById('formFeedback').style.display = 'none';
+    }
+
+    // Triggered when the invisible iframe finishes loading Google's response
+    function handleIframeLoad() {
+      if (isSubmitting) {
+        const feedback = document.getElementById('formFeedback');
+
+        // Show success message
+        feedback.style.display = 'block';
+        feedback.style.backgroundColor = '#ecfdf5';
+        feedback.style.color = '#065f46';
+        feedback.innerHTML = 'Success! Your message has been sent.';
+
+        // Reset form and button
+        document.getElementById('staticGoogleForm').reset();
+        document.getElementById('btnText').innerText = 'Send Message';
+        isSubmitting = false;
+
+        // Hide message after 5 seconds
+        setTimeout(() => { feedback.style.display = 'none'; }, 5000);
+      }
+    }
+  </script>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <img src="logo.png" alt="Shri Madhav Smart ELV Systems Logo" />
+          <div class="footer-logo-text">Shri Madhav Smart ELV Systems</div>
+        </div>
+        <p class="footer-tagline">A trusted name in ELV system integration — delivering smart security and connectivity
+          solutions across North India since our founding.</p>
+
+      </div>
+      <div>
+        <div class="footer-col-title">Our Services</div>
+        <ul class="footer-links">
+          <li><a href="#services">CCTV Surveillance</a></li>
+          <li><a href="#services">Fire Alarm Systems</a></li>
+          <li><a href="#services">Access Control</a></li>
+          <li><a href="#services">Networking Solutions</a></li>
+          <li><a href="#services">PA Systems</a></li>
+          <li><a href="#services">Gate Automation</a></li>
+          <li><a href="#services">AMC &amp; Maintenance</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Service Areas</div>
+        <ul class="footer-links">
+          <li><a href="#">Punjab</a></li>
+          <li><a href="#">Haryana</a></li>
+          <li><a href="#">Chandigarh</a></li>
+          <li><a href="#">Himachal Pradesh</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-links">
+          <li><a href="tel:+919306437552"><i class="fa-solid fa-phone" style="width:16px;"></i> +91 9306437552</a></li>
+          <li><a href="mailto:info@smses.co.in"><i class="fa-solid fa-envelope" style="width:16px;"></i>
+              info@smses.co.in</a></li>
+          <li><a href="#"><i class="fa-solid fa-globe" style="width:16px;"></i> www.smses.co.in</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">©
+        <script>document.write(new Date().getFullYear())</script> Shri Madhav Smart ELV Systems. All rights reserved.
+      </div>
+      <div class="footer-reg">Smart Security • Smart Connectivity • Smart Solutions</div>
+    </div>
+  </footer>
+
+  <script>
+    // MOBILE HAMBURGER MENU TOGGLE
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      // Optional: Toggle icon between bars and close (X)
+      const icon = hamburger.querySelector('i');
+      if (navLinks.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    });
+
+    // Hide menu when clicking a link on mobile
+    document.querySelectorAll('.nav-links li a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        const icon = hamburger.querySelector('i');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      });
+    });
+
+    // SCROLL REVEAL
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          e.target.style.transitionDelay = (i * 0.07) + 's';
+          e.target.classList.add('in');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // FORM
+    document.getElementById('submitBtn').addEventListener('click', function () {
+      this.innerHTML = '<i class="fa-solid fa-check"></i> Sent! We will contact you shortly.';
+      this.style.background = '#16a34a';
+    });
+
+    // STICKY HEADER SHADOW
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      header.style.boxShadow = window.scrollY > 10 ? '0 4px 30px rgba(13,27,94,.15)' : '0 4px 24px rgba(13,27,94,.08)';
+    });
+  </script>
+</body>
+
+</html>
