@@ -1303,8 +1303,67 @@
         font-size: 0.9rem;
       }
     }
-  </style>
+    /* Smooth transition for the flipping effect */
+.hero-img-card {
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  transform-style: preserve-3d;
+}
 
+/* Class applied via JavaScript to hide and rotate the card halfway */
+.hero-img-card.flip-out {
+  transform: rotateY(90deg);
+  opacity: 0;
+}
+  </style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  // Array containing all 8 of your services
+  const allServices = [
+    { icon: "fa-video", text: "CCTV Surveillance" },
+    { icon: "fa-fire-flame-curved", text: "Fire Alarm Systems" },
+    { icon: "fa-fingerprint", text: "Access Control" },
+    { icon: "fa-network-wired", text: "Networking Solutions" },
+    { icon: "fa-bullhorn", text: "PA Systems" },
+    { icon: "fa-tty", text: "Video Door Phone" },
+    { icon: "fa-road-barrier", text: "Boom Barrier & Gate" },
+    { icon: "fa-screwdriver-wrench", text: "AMC & Maintenance" }
+  ];
+
+  const heroCards = document.querySelectorAll(".hero-img-grid .hero-img-card");
+  
+  // Since you have 8 services and 4 cards, we have 2 "pages" (Page 0 and Page 1)
+  let currentPage = 0; 
+
+  setInterval(() => {
+    // 1. Add the flip-out class to start the animation
+    heroCards.forEach(card => card.classList.add("flip-out"));
+
+    // 2. Wait for the card to be invisible (400ms matches our CSS transition)
+    setTimeout(() => {
+      // Toggle to the next batch of 4 services
+      currentPage = currentPage === 0 ? 1 : 0;
+      const startIndex = currentPage * 4;
+
+      // Update the content of each card
+      heroCards.forEach((card, index) => {
+        const serviceData = allServices[startIndex + index];
+        
+        // Find the icon and text elements inside the card
+        const iconElement = card.querySelector(".icon i");
+        const textElement = card.querySelector("p");
+
+        // Swap out the FontAwesome icon class and the text
+        iconElement.className = `fa-solid ${serviceData.icon}`;
+        textElement.textContent = serviceData.text;
+
+        // Remove the flip-out class to animate the cards back in
+        card.classList.remove("flip-out");
+      });
+    }, 400); 
+
+  }, 5000); // 5000 milliseconds = 5 seconds
+});
+</script>
 </head>
 
 <body>
@@ -1343,6 +1402,7 @@
         </ul>
       </nav>
     </div>
+    
   </header>
 
   <!-- HERO -->
@@ -1360,23 +1420,26 @@
         </div>
       </div>
       <div class="hero-img-grid">
-        <div class="hero-img-card">
-          <span class="icon"><i class="fa-solid fa-video"></i></span>
-          <p>CCTV Surveillance</p>
-        </div>
-        <div class="hero-img-card">
-          <span class="icon"><i class="fa-solid fa-fire-flame-curved"></i></span>
-          <p>Fire Alarm Systems</p>
-        </div>
-        <div class="hero-img-card">
-          <span class="icon"><i class="fa-solid fa-fingerprint"></i></span>
-          <p>Access Control</p>
-        </div>
-        <div class="hero-img-card">
-          <span class="icon"><i class="fa-solid fa-network-wired"></i></span>
-          <p>Networking Solutions</p>
-        </div>
-      </div>
+  <div class="hero-img-card">
+    <span class="icon"><i class="fa-solid fa-video"></i></span>
+    <p>CCTV Surveillance</p>
+  </div>
+  
+  <div class="hero-img-card">
+    <span class="icon"><i class="fa-solid fa-fire-flame-curved"></i></span>
+    <p>Fire Alarm Systems</p>
+  </div>
+  
+  <div class="hero-img-card">
+    <span class="icon"><i class="fa-solid fa-fingerprint"></i></span>
+    <p>Access Control</p>
+  </div>
+  
+  <div class="hero-img-card">
+    <span class="icon"><i class="fa-solid fa-network-wired"></i></span>
+    <p>Networking Solutions</p>
+  </div>
+</div>
     </div>
   </section>
 
